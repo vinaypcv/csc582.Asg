@@ -44,12 +44,12 @@ protected:
     void update() override; // Override update method from AbstractDevice
 
 private:
-    AND m_andGate; ///< AND gate for carry calculation
-    OR m_orGate; ///< OR gate for sum calculation (XOR functionality)
-    NAND m_nandGate; ///< NAND gate used for XOR calculation
+    AND m_andGate; ///< Logical AND gate used for carry computation
+    OR m_orGate; ///< Logical OR gate, simulating XOR functionality for sum calculation
+    NAND m_nandGate; ///< Logical NAND gate utilized in XOR computation
 
-    unsigned short int m_sum; ///< Holds the result of the sum
-    unsigned short int m_carry; ///< Holds the result of the carry
+    unsigned short int m_sum; ///< Stores the sum result
+    unsigned short int m_carry; ///< Stores the carry result
 };
 
 #endif  
